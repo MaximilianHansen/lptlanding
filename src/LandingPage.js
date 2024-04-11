@@ -33,10 +33,10 @@ function SignUp() {
 
 
 
-            <div className="w-full  flex flex-row justify-center pt-4 pb-4 bg-primary"><img className="h-[30px]"src="./logo.png"></img></div>   
+            <div className="w-full  flex flex-row justify-center pt-4 pb-4 bg-primary"><img className="h-[1.5rem]"src="./logo.png"></img></div>   
 
             <div className='md:flex md:justify-center md:mt-20 '>
-            <div className="flex flex-col items-center md:w-4/5 md:pb-12 md:px-6 md:border-2 md:rounded-xl md:border-base md:bg-primary-content md:shadow-xl max-w-[900px]">
+            <div className="flex flex-col items-center md:w-4/5 md:pb-12 md:px-6 md:border-2 md:rounded-xl md:border-base md:bg-primary-content md:shadow-xl md:max-w-[70%]">
             <div className='md:flex md:flex-row  '>
             <div className='md:flex md:flex-col md:w-1/2 md:my-8 md:justify-center md:items-center'>
                 <div className="flex w-full justify-center mt-8 md:mt-0">
