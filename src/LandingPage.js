@@ -35,7 +35,7 @@ function SignUp() {
     return (
         <div >
             <Helmet>
-            <title>April $4 Special!</title>
+            <title>April $40 Special!</title>
             <meta name="description" content="No more off-and-on workouts, stay motivated and consistent!" />
             <meta property="og:title" content="April Special" />
             <meta property="og:description" content="No more off-and-on workouts, stay motivated and consistent!" />
