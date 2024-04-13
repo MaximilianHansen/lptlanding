@@ -14,9 +14,11 @@ function SignUp() {
         const {trackEvent} = Plausible();
     
         const handleSubmit = (event) => {
-
+            setCheckout(true);
             event.preventDefault(); 
         };
+
+        const [checkout, setCheckout] =  useState(false);
 
         
 
@@ -32,15 +34,17 @@ function SignUp() {
             </Helmet>
 
 
-
+            
             <div className="w-full  flex flex-row justify-center pt-4 pb-4 bg-primary"><img className="h-[1.5rem]"src="./logo.png"></img></div>   
-
+            {checkout ? <iframe className='w-full h-[100vh] pt-4' src='https://www.clubready.com/JoinUs/696/583627'/> : 
             <div className='md:flex md:justify-center md:mt-20 '>
             <div className="flex flex-col items-center md:w-4/5 md:pb-12 md:px-6 md:border-2 md:rounded-xl md:border-base md:bg-primary-content md:shadow-xl md:max-w-[70%]">
+            
+            
             <div className='md:flex md:flex-row  '>
             <div className='md:flex md:flex-col md:w-1/2 md:my-8 md:justify-center md:items-center'>
-                <div className="flex w-full justify-center mt-8 md:mt-0">
-                    <h1 className="text-3xl font-black text-center px-8 uppercase">Try four personal training sessions <h1 className='text-primary'>for only $4</h1></h1>
+            <div className="flex w-full justify-center mt-8 md:mt-0">
+                    <h1 className="text-3xl font-black text-center px-8 uppercase">Try four personal training sessions <h1 className='text-primary'>for only $40</h1></h1>
                 </div>
                 <div className="px-8 mt-4">
                     <p className="text-center">Act now, April availability is very limited! </p>
@@ -71,7 +75,7 @@ function SignUp() {
 
             </div>
            
-            </div>       
+            </div>   }    
         </div>
     );
 }
