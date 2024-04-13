@@ -12,13 +12,23 @@ import CountdownTimer from './CountdownTimer';
 function SignUp() {    
     const targetDate = "April 30, 2024 23:59:59";
         const {trackEvent} = Plausible();
+
+        const handleIframeLoad =() => {
+            setLoading(false);
+        }
     
         const handleSubmit = (event) => {
+            setLoading(true);
             setCheckout(true);
             event.preventDefault(); 
         };
 
+        const x = () => {
+            setCheckout(false);
+        }
+
         const [checkout, setCheckout] =  useState(false);
+        const [loading, setLoading] = useState(false);
 
         
 
@@ -35,8 +45,9 @@ function SignUp() {
 
 
             
-            <div className="w-full  flex flex-row justify-center pt-4 pb-4 bg-primary"><img className="h-[1.5rem]"src="./logo.png"></img></div>   
-            {checkout ? <iframe className='w-full h-[100vh] pt-4' src='https://www.clubready.com/JoinUs/696/583627'/> : 
+            <div className="w-full  flex flex-row justify-center pt-4 pb-4 bg-primary "><img className="h-[1.5rem]"src="./logo.png"></img></div>
+            {loading && <div className="font-bold w-full text-center pt-8 ">Loading...</div>} 
+            {checkout ? <><p className="absolute top-[4rem] font-bold text-l right-4 p-4 z-50 cursor-pointer" onClick={x}> X </p> <iframe className='w-full h-[100vh] pt-4'  onLoad={handleIframeLoad} src='https://www.clubready.com/JoinUs/696/583627'/></> : 
             <div className='md:flex md:justify-center md:mt-20 '>
             <div className="flex flex-col items-center md:w-4/5 md:pb-12 md:px-6 md:border-2 md:rounded-xl md:border-base md:bg-primary-content md:shadow-xl md:max-w-[70%]">
             
