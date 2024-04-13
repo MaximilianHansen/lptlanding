@@ -11,7 +11,8 @@ import CountdownTimer from './CountdownTimer';
 
 function SignUp() {    
     const targetDate = "April 30, 2024 23:59:59";
-        const {trackEvent} = Plausible();
+        const {trackEvent, trackPageview} = Plausible();
+        trackPageview()
 
         const handleIframeLoad =() => {
             setLoading(false);
@@ -20,6 +21,7 @@ function SignUp() {
         const handleSubmit = (event) => {
             setLoading(true);
             setCheckout(true);
+            trackEvent('checkout')
             event.preventDefault(); 
         };
 
