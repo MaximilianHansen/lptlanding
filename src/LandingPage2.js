@@ -21,7 +21,7 @@ function SignUp1() {
         const handleSubmit = (event) => {
             setLoading(true);
             setCheckout(true);
-            trackEvent('checkout')
+            trackEvent('checkout1')
             event.preventDefault(); 
         };
 
