@@ -57,12 +57,13 @@ function SignUp() {
             <div className='md:flex md:flex-row  '>
             <div className='md:flex md:flex-col md:w-1/2 md:my-8 md:justify-center md:items-center'>
             <div className="flex w-full justify-center mt-8 md:mt-0">
-                    <h1 className="text-3xl font-black text-center px-8 uppercase">Try four personal training sessions <h1 className='text-primary'>for only $40</h1></h1>
+                    <h1 className="text-3xl font-black text-center px-8 uppercase">14 Day Slim Down Jump Start <h1 className='text-primary'>for only $40</h1></h1>
                 </div>
                 <div className="px-8 mt-4">
                     <p className="text-center">Act now, April availability is very limited! </p>
                 </div>
                 <ul class="hidden md:block list-disc mx-8 mt-6 mb-8">
+                <li className="mb-3"><p className="inline text-primary font-bold">Included ($180 Value) : </p>Four 1-on-1, 30 minuite Personal Training Sessions<p className='inline'></p></li>
                 <li className="mb-3"><p className="inline text-primary font-bold">Bonus #1 ($200 Value) : </p><p className='inline'>Individualized Meal plan with Grocery List and Food Prep Guide</p></li>
                 <li><p className="inline text-primary font-bold">Bonus #2 ($49 Value) : </p><p className='inline'>Our foolproof acountibility system that can make anyone stick to their weightloss regimen</p></li>
             </ul>
@@ -82,6 +83,7 @@ function SignUp() {
             </div>  
 
             <ul class="md:hidden list-disc mx-10 mt-6 mb-8">
+            <li className="mb-3"><p className="inline text-primary font-bold">Included ($180 Value) : </p>Four 1-on-1, 30 minuite Personal Training Sessions<p className='inline'></p></li>
             <li className="mb-3"><p className="inline text-primary font-bold">Bonus #1 ($200 Value) : </p><p className='inline'>Individualized Meal plan with Grocery List and Food Prep Guide</p></li>
                 <li><p className="inline text-primary font-bold">Bonus #2 ($49 Value) : </p><p className='inline'>Our foolproof acountibility system that can make anyone stick to their weightloss regimen</p></li>
             </ul>
